@@ -7,7 +7,7 @@ Stock Ubuntu 18.04 (Bionic) LTS Docker image with a default user for automation 
 
 ## How to Build this Image
 
-This image is built automatically on Docker Hub any time a commit is made or code is merged to the `master` branch. However, if you need to need to manually build an image, execute the following:
+This image is built automatically on Docker Hub any time a commit is made or code is merged to the `master` branch. However, if you need to need to manually build an image on your workstation, execute the following:
 ```
 make image
 ```
@@ -17,6 +17,12 @@ make image
 To run a container from this image, run this command:
 ```
 make run
+```
+
+## How to Clean Up
+To remove both the local container and image, run this command:
+```
+make clean
 ```
 
 ## Disclaimer 
