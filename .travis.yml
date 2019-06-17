@@ -8,5 +8,5 @@ before_install:
 
 script:
   # Test building Dockerfile.
-  - docker build -t docker-testuser .
+  - docker build -t docker-testuser . --build-arg USER=testuser
 
