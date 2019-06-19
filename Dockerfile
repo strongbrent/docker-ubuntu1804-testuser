@@ -3,6 +3,10 @@ LABEL maintainer="Strongbrent"
 
 # Install Dependencies
 RUN apt-get update \
+    && apt-get upgrade -y --no-install-recommends \
+    && apt-get clean
+
+RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         sudo \
         curl \
